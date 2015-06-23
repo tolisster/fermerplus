@@ -17,8 +17,9 @@ include './bbcode/irb_bbdecoder.php';
     }	
 	
 	
-	$tpl = getTpl('news/row');
-	$news = '';
+	$tpl = getTpl('main/index');
+	$index = '';
+	/*$news = '';
 
             $res = mysqlQuery("SELECT 
 	                               `id`, 
@@ -55,7 +56,33 @@ include './bbcode/irb_bbdecoder.php';
                           {
                                 $news = DEXIST_A;
                           }
- 
- 
+ */
+ $res1 = mysqlQuery("SELECT 
+   `id`, 
+   `public`,
+   `rutitle`,
+   `entitle`,
+	SUBSTRING_INDEX(`" . $GET['lang']  . "desc`,' ','40') AS `" . $GET['lang']  . "desc`
+
+	 FROM `pages` WHERE  `page` = 'index'   ORDER BY `id` DESC ");   
+	 
+          
+if(mysql_num_rows($res1) > 0)
+{
+	$row = mysql_fetch_assoc($res1);
+	
+	$row['title'] = htmlspecialchars($row[''. $GET['lang']  . 'title']);
+	$row['content'] = ($row[''. $GET['lang']  . 'desc']. '....');
+	//$row['url'] = href('page=main','main=' . $row['id']);
+		
+	$index = parseTpl($tpl, $row);
+
+	echo $index;
+		
+}
+else
+{
+	$index = DEXIST_A;
+}
  
 
