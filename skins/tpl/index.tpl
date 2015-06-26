@@ -131,40 +131,25 @@
         <nav class="primary clearfix">
           <ul id="topnav" class="sf-menu sf-js-enabled">
 		  <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=main'); ?>">Главная</a></li>
-          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=about'); ?>">О нас</a></li>
-          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=services'); ?>">Услуги</a></li>
           <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=news'); ?>">Новости</a></li>
           <li id="menu-item" class="menu-item"><a href="">Продукты</a>
-		  
-		  
-		  <ul >
-	<li id="menu-item2" ><a href="<?php echo href('lang='. $GET['lang'],'page=seeds'); ?>">Семена</a></li>
-	<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=fertilizers'); ?>">Удобрения</a></li>
-	<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=1'); ?>">Сетка шпалерная</a></li>
-	<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=2'); ?>">Шпагат</a></li>
-	<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=7'); ?>">Кассеты рассадные</a></li>
-	<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=3'); ?>">Укрывной материал (LUTRASIL)</a></li>
-	<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=4'); ?>">Аксессуары для тепличных растений</a></li>
-	<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=5'); ?>">Газон исскуственный</a></li>
-	<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=6'); ?>">Теплицы профессиональные</a></li>
-
-	
-
-    
-	
-	
-	
-	
-	
-	
-	
-	
-	</ul>
-
-		  
-		  
+			<ul >
+				<li id="menu-item2" ><a href="<?php echo href('lang='. $GET['lang'],'page=seeds'); ?>">Семена</a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=fertilizers'); ?>">Удобрения</a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=1'); ?>">Сетка шпалерная</a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=2'); ?>">Шпагат</a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=7'); ?>">Кассеты рассадные</a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=3'); ?>">Укрывной материал (LUTRASIL)</a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=4'); ?>">Аксессуары для тепличных растений</a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=5'); ?>">Газон исскуственный</a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=6'); ?>">Теплицы профессиональные</a></li>
+			</ul>
 		  </li>
-          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=contacts'); ?>">Контакты</a></li>
+          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=technology'); ?>">Технологии</a></li>
+          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=prices'); ?>">Болезни</a></li>
+		  <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=about'); ?>">О нас</a></li>
+          <!--<li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=services'); ?>">Услуги</a></li>
+          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=contacts'); ?>">Контакты</a></li>-->
           </ul>        </nav><!--.primary-->
         <div class="clear"></div>
         <div id="widget-header">

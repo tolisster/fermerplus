@@ -17,7 +17,7 @@ include './bbcode/irb_bbdecoder.php';
     }	
 	
 	
-	$tpl = getTpl('main/index');
+	$tpl = getTpl('main/row');
 	$index = '';
 	/*$news = '';
 
@@ -65,24 +65,22 @@ include './bbcode/irb_bbdecoder.php';
 	SUBSTRING_INDEX(`" . $GET['lang']  . "desc`,' ','40') AS `" . $GET['lang']  . "desc`
 
 	 FROM `pages` WHERE  `page` = 'index'   ORDER BY `id` DESC ");   
-	 
-          
+
+
 if(mysql_num_rows($res1) > 0)
 {
-	$row = mysql_fetch_assoc($res1);
-	
-	$row['title'] = htmlspecialchars($row[''. $GET['lang']  . 'title']);
-	$row['content'] = ($row[''. $GET['lang']  . 'desc']. '....');
-	//$row['url'] = href('page=main','main=' . $row['id']);
-		
-	$index = parseTpl($tpl, $row);
+   while ($row = mysql_fetch_assoc($res1))
+	  {
+		  $row['title'] = htmlspecialchars($row[''. $GET['lang']  . 'title']);
+		  $row['content'] = ($row[''. $GET['lang']  . 'desc']);
 
-	echo $index;
-		
+		  $index = parseTpl($tpl, $row);
+ 
+	  }
+
 }
+
 else
 {
 	$index = DEXIST_A;
 }
- 
-
