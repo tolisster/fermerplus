@@ -19,7 +19,29 @@
     } 
 ////////////////////////////////////////////////////////// 
 
+	define('DISEASE',     'Boli');
+	define('PRODUCTS',     'Produse');
+	define('SEARCH',     'Caută');
+	define('NEWS',     'Noutăți');
+	define('SEEDS',     'sămânță');
+	
+	define('BIOLOGYANDAGRO', 'Biologie și Agrotehnică');
+	define('GOTOBIBLIO', 'Treci la bibliotecă');
+	define('SEARCHBYREQUEST', 'Cererea de căutare');
+	define('SEMENAFERMERPLUS', 'Semințe FERMER +');
 
+	 define('ARTICLES',     'Semințe'); 
+	define('FERTILIZERS',     'Ingrasaminte');
+	define('SKIN', 'Плёнка');
+	define('TAPESTRY', 'Сетка шпалерная');
+	define('TWINE', 'Шпагат');
+	define('PEAT', 'Торф');
+	define('CASSETES', 'Кассеты рассадные');
+	define('COVERING', 'Укрывной материал');
+	define('ACCESSORIES', 'Аксессуары для тепличных растений');
+	define('LAWN', 'Газон исскуственный');
+	define('GREENHOUSES', 'Теплицы профессиональные');
+	
     define('IRB_LANG_PUBLIC',      '<img width="12" src="/skins/images/admin/led_gray.gif">');
     define('IRB_LANG_NO_PUBLIC',   '<img width="12" src="/skins/images/admin/led_green.gif">');	
 	define('IRB_LANG_NO_NEWS',     'Nu sunt publicatii');	  

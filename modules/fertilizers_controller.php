@@ -25,9 +25,9 @@ include './bbcode/irb_bbdecoder.php';
 	                               `id`, 
 	                               `public`,
 	                               `rutitle`,
-	                               `entitle`,
+	                               `rotitle`,
 	                               `rucontent`,	
-								   `encontent`
+								   `rocontent`
 	                                
 									FROM `fertilizers` WHERE `public` = 1 ORDER BY `id` DESC ");   
 	 

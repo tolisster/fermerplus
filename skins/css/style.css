@@ -855,6 +855,19 @@ li.sfHover > a > .sf-sub-indicator {
 			}	
 	
 
+#top-language {
+	color:#b3ff66;
+	position:absolute;
+	right:130px;
+	top:15px;
+	width:228px;
+	height:24px;
+}
+
+#top-language a{
+	color:#b3ff66;
+}
+	
 /* Top search */
 #top-search {
 	position:absolute;

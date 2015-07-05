@@ -2,7 +2,7 @@
    <div class="content-cent">
    
       <div class="main-content">
-         <h1>Болезни</h1>			            
+         <h1><?=DISEASE;?></h1>
             <br />
 	        <?php echo $seeds_disease; ?>
        </div>

@@ -68,7 +68,7 @@ $tpl2 = getTpl('main/news');
 $main_diseases = '';
 $mnews = '';
 
-$res = mysqlQuery("SELECT `id`, `public`, `rutitle`, `entitle`, SUBSTRING_INDEX(`" . $GET['lang']  . "content`,' ','30') AS `" . $GET['lang']  . "content`
+$res = mysqlQuery("SELECT `id`, `public`, `rutitle`, `rotitle`, SUBSTRING_INDEX(`" . $GET['lang']  . "content`,' ','30') AS `" . $GET['lang']  . "content`
 	              FROM `seeds_disease` WHERE  `public` = 1  ");   
 	 
 if(mysql_num_rows($res) > 0)
@@ -91,7 +91,7 @@ if(mysql_num_rows($res) > 0)
 						  
 
 
-$res = mysqlQuery("SELECT `id`, `public`, `rutitle`, `entitle`, SUBSTRING_INDEX(`" . $GET['lang']  . "desc`,' ','30') AS `" . $GET['lang']  . "desc`
+$res = mysqlQuery("SELECT `id`, `public`, `rutitle`, `rotitle`, SUBSTRING_INDEX(`" . $GET['lang']  . "desc`,' ','30') AS `" . $GET['lang']  . "desc`
 	              FROM `news` WHERE  `public` = 1  ");   
 	 
 if(mysql_num_rows($res) > 0)

@@ -2,7 +2,7 @@
    <div class="content-cent">
    
       <div class="main-content">
-         <h1>Новости</h1>			            
+         <h1><?=NEWS;?></h1>			            
             <br />
 	       <?php echo $news; ?>
 		   

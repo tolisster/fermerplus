@@ -54,8 +54,4 @@
 * Подготовка к выводу
 * Preparation for a conclusion
 */
-
 	include './modules/'. $modul .'/view.php';
-	
-
-	

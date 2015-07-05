@@ -70,7 +70,9 @@ if($GET['rem'] == 'nopublic')
                        SET 
 				      `rutitle`   ='". escapeString($POST['value1']) ."',
 				      `rudesc` ='". escapeString($POST['value2']) ."',
-					  `image`     ='". escapeString($POST['value3']) ."'
+					  `image`     ='". escapeString($POST['value3']) ."',
+					  `rotitle`   ='". escapeString($POST['value4']) ."',
+					  `rodesc`   ='". escapeString($POST['value5']) ."'
 					 
 	                  
 					   WHERE `id`='". (int)$GET['id'] ."' ");
@@ -85,6 +87,8 @@ if($GET['rem'] == 'nopublic')
                     $POST['value1'] = $row['rutitle'];
                     $POST['value2'] = $row['rudesc']; 
 					$POST['value3'] = $row['image'];
+					$POST['value4'] = $row['rotitle'];
+					$POST['value5'] = $row['rodesc'];
 
      }
      else

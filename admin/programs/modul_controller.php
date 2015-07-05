@@ -48,9 +48,9 @@ if($GET['rem'] == 'nopublic')
     {   mysqlQuery("INSERT INTO " . DBNAME . "
                     SET 
 					`rutitle`     ='',
-					`entitle`     ='',
+					`rotitle`     ='',
 					`rucontent`        ='',
-					`encontent`        =''
+					`rocontent`        =''
 		           ");
             
                     
@@ -68,9 +68,9 @@ if($GET['rem'] == 'nopublic')
         {  mysqlQuery("UPDATE " . DBNAME . "
                        SET 
 					   `rutitle`      ='". escapeString($POST['value1']) ."',
-					   `entitle`   ='". escapeString($POST['value2']) ."',
+					   `rotitle`   ='". escapeString($POST['value2']) ."',
 					   `rucontent`     ='". escapeString($POST['value3']) ."',
-					   `encontent`     ='". escapeString($POST['value4']) ."'
+					   `rocontent`     ='". escapeString($POST['value4']) ."'
 
 					 
 	                  
@@ -84,9 +84,9 @@ if($GET['rem'] == 'nopublic')
                             
 			  $row = (mysql_fetch_assoc($res));
                     $POST['value1'] = $row['rutitle'];
-                    $POST['value2'] = $row['entitle'];  
+                    $POST['value2'] = $row['rotitle'];  
 					$POST['value3'] = $row['rucontent']; 
-					$POST['value4'] = $row['encontent']; 
+					$POST['value4'] = $row['rocontent']; 
 
 
      }
@@ -123,9 +123,9 @@ if($GET['rem'] == 'nopublic')
             $row = mysql_fetch_assoc($res);
                  
                  $row['rutitle']   = htmlspecialchars($row['rutitle']);
-				 $row['entitle']   = htmlspecialchars($row['entitle']);
+				 $row['rotitle']   = htmlspecialchars($row['rotitle']);
 				 $row['rucontent'] = ($row['rucontent']);
-				 $row['encontent'] = ($row['encontent']);
+				 $row['rocontent'] = ($row['rocontent']);
 
                  $articles = parseTpl($tpl, $row);
         }

@@ -3,4 +3,3 @@
 <?php echo $info; ?>
    </div>
 </div><!--#content-->
-

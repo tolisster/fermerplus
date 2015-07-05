@@ -71,7 +71,7 @@ include './bbcode/irb_bbdecoder.php';
 	                               `id`, 
 	                               `public`,
 	                               `rutitle`,
-								   `entitle`,
+								   `rotitle`,
 								   `cat`,
 								   `image`,
 	                                SUBSTRING_INDEX(`" . $GET['lang']  . "desc`,' ','40') AS `" . $GET['lang']  . "desc`

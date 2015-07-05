@@ -70,7 +70,7 @@ include './bbcode/irb_bbdecoder.php';
 	                               `public`,
 								   `cat`,
 	                               `rutitle`,
-								   `entitle`,
+								   `rotitle`,
 	                                SUBSTRING_INDEX(`" . $GET['lang']  . "content`,' ','40') AS `" . $GET['lang']  . "content`
 	
 	                                 FROM `articles` WHERE  `public` = 1 AND `cat` = '" . $GET['sel']  ."'    ORDER BY `id` DESC ");   

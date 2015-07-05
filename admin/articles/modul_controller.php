@@ -67,7 +67,9 @@ if($GET['rem'] == 'nopublic')
         {  mysqlQuery("UPDATE " . DBNAME . "
                        SET 
 				      `rutitle`   ='". escapeString($POST['value1']) ."',
-				      `rucontent` ='". escapeString($POST['value2']) ."'
+				      `rucontent` ='". escapeString($POST['value2']) ."',
+					   `rotitle`   ='". escapeString($POST['value3']) ."',
+				       `rocontent` ='". escapeString($POST['value4']) ."'
 					 
 	                  
 					   WHERE `id`='". (int)$GET['id'] ."' ");
@@ -80,7 +82,9 @@ if($GET['rem'] == 'nopublic')
                             
 			  $row = htmlChars(mysql_fetch_assoc($res));
                     $POST['value1'] = $row['rutitle'];
-                    $POST['value2'] = $row['rucontent'];    
+                    $POST['value2'] = $row['rucontent'];
+					$POST['value3'] = $row['rotitle'];
+                    $POST['value4'] = $row['rocontent'];    
 
      }
      else

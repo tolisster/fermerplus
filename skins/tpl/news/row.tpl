@@ -8,7 +8,7 @@
 	 
 	 </div>	
 	 <div class="post_content">
-     <p><?php echo $tpl_content; ?> <br /><a href="<?php echo $tpl_url; ?>" class="link">Подробнее</a></p>
+     <p><?php echo $tpl_content; ?> <br /><a href="<?php echo $tpl_url; ?>" class="link"><?=MORE;?></a></p>
 	</div>
 	
 	</div>

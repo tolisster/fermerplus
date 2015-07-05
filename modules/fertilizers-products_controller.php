@@ -28,9 +28,9 @@ include './bbcode/irb_bbdecoder.php';
 	                               `public`,
 	                               `images`,
 	                               `rutitle`,
-								   `entitle`,
+								   `rotitle`,
 								   `rudesc`,
-								   `endesc`,
+								   `rodesc`,
 								   `mneto`,
 								   `price`
 								   	

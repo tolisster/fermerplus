@@ -73,7 +73,9 @@ if($GET['rem'] == 'nopublic')
 				      `rutitle`   ='". escapeString($POST['value1']) ."',
 				      `rudesc` ='". escapeString($POST['value2']) ."',
 					  `images`     ='". escapeString($POST['value3']) ."',
-					  `page`     ='". escapeString($POST['value4']) ."'
+					  `page`     ='". escapeString($POST['value4']) ."',
+					  `rotitle`   ='". escapeString($POST['value5']) ."',
+				      `rodesc` ='". escapeString($POST['value6']) ."'
 					 
 	                  
 					   WHERE `id`='". (int)$GET['id'] ."' ");
@@ -89,6 +91,8 @@ if($GET['rem'] == 'nopublic')
                     $POST['value2'] = $row['rudesc']; 
 					$POST['value3'] = $row['images'];
 					$POST['value4'] = $row['page'];
+					$POST['value5'] = $row['rotitle'];
+					$POST['value6'] = $row['rodesc'];
 
      }
      else

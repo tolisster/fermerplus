@@ -21,7 +21,7 @@
 </div>
 
 <div class="inp">
-<label>EN Denumire</label>
+<label>RO Denumire</label>
 <input size="70" name="form[value2]" type="text" value="<?php echo $POST['value2'] ?>"/>
 </div>
 
@@ -34,8 +34,8 @@
 
 
 <div class="inp">
-<label><strong>EN</strong></label><br />
-<textarea class="ckeditor" name="form[value4]" rows="20" style="width:800px;" onselect='savesel(this)' onchange='savesel(this)' onclick='savesel(this)' onfocus='savesel(this)' onkeyup='savesel(this)'><?php echo $POST['value5'] ?></textarea>
+<label><strong>RO</strong></label><br />
+<textarea class="ckeditor" name="form[value4]" rows="20" style="width:800px;" onselect='savesel(this)' onchange='savesel(this)' onclick='savesel(this)' onfocus='savesel(this)' onkeyup='savesel(this)'><?php echo $POST['value4'] ?></textarea>
 </div>
 
 

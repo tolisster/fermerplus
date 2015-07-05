@@ -19,7 +19,7 @@
 <input size="70" name="form[value2]" type="text" value="<?php echo $POST['value2'] ?>"/>
 </div>
 <div class="inp">
-<label>Название EN</label>
+<label>Название RO</label>
 <input size="70" name="form[value3]" type="text" value="<?php echo $POST['value3'] ?>"/>
 </div>
 <div class="inp">
@@ -46,7 +46,7 @@
 
 
 <div class="inp">
-<label><strong>EN</strong></label><br />
+<label><strong>RO</strong></label><br />
 
 
 <textarea class="ckeditor" name="form[value6]" rows="20" style="width:800px;" onselect='savesel(this)' onchange='savesel(this)' onclick='savesel(this)' onfocus='savesel(this)' onkeyup='savesel(this)'><?php echo $POST['value6'] ?></textarea>

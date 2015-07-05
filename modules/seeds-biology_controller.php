@@ -68,7 +68,7 @@ include './bbcode/irb_bbdecoder.php';
 	                               `id`, 
 	                               `public`,
 	                               `rutitle`,
-								   `entitle`,
+								   `rotitle`,
 	                                SUBSTRING_INDEX(`" . $GET['lang']  . "content`,' ','40') AS `" . $GET['lang']  . "content`
 	
 	                                 FROM `seeds_biology` WHERE  `public` = 1   ORDER BY `id` DESC ");   

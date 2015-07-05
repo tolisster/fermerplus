@@ -23,16 +23,36 @@
    define('MAIN_TITLE',     'FARMER +'); 
    
    define('SEEDS',     'Семена');
+   define('DISEASE',     'Болезни');
+   define('PRODUCTS',     'Продукты');
+   define('SEARCH',     'Искать');
+   define('NEWS',     'Новости');
+   
+   define('BIOLOGYANDAGRO', 'Биология и Агротехника');
+   define('GOTOBIBLIO', 'Перейти в библиотеку');
+   define('SEARCHBYREQUEST', 'Поиск по запросу');
+   define('SEMENAFERMERPLUS', 'Семена FERMER +');
+   
+   define('SKIN', 'Плёнка');
+   define('TAPESTRY', 'Сетка шпалерная');
+   define('TWINE', 'Шпагат');
+   define('PEAT', 'Торф');
+   define('CASSETES', 'Кассеты рассадные');
+   define('COVERING', 'Укрывной материал');
+   define('ACCESSORIES', 'Аксессуары для тепличных растений');
+   define('LAWN', 'Газон исскуственный');
+   define('GREENHOUSES', 'Теплицы профессиональные');
+   
    define('FERTILIZERS',     'Удобрения');  
    define('FERTILIZERS_PRODUCTS',     'Удобрения продукция'); 
    
-   define('PRIMENENIE',     'Облость применения:'); 
+   define('PRIMENENIE',     'Область применения:'); 
    define('PACK',     'Упаковка:'); 
    define('PRICE',     'Цена:'); 
    
    
    define('ARTICLES',     'Семена'); 
-   define('DEVELOP',      'Событья'); 
+   define('DEVELOP',      'События'); 
    define('PARTICIP',     'Участники'); 
    define('CONTACTS',     'Контакты'); 
    define('WHYREG',       'Для чего нужна регистрация?'); 

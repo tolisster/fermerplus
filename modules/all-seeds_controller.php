@@ -73,7 +73,7 @@ include './bbcode/irb_bbdecoder.php';
 	                               `category`,
 								   `images`,
 	                               `rutitle`,
-								   `entitle`,
+								   `rotitle`,
 	                                SUBSTRING_INDEX(`" . $GET['lang']  . "desc`,' ','40') AS `" . $GET['lang']  . "desc`
 	
 	                                 FROM `seeds` WHERE  `public` = 1 AND `category` = '". $GET['sel']  ."'  ORDER BY `id` DESC ");   

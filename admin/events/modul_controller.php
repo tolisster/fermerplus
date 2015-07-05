@@ -50,10 +50,10 @@ if($GET['rem'] == 'nopublic')
                     SET 
 			        `category`     ='',
 			        `rutitle`   ='name',
-					`entitle`   ='',
+					`rotitle`   ='',
 					`images`   ='',
 					`rudesc`   ='',
-					`endesc`   =''
+					`rodesc`   =''
 		           ");
             
                     
@@ -72,10 +72,10 @@ if($GET['rem'] == 'nopublic')
                        SET 
 					  `category`   ='". escapeString($POST['value1']) ."',
 				      `rutitle`   ='". escapeString($POST['value2']) ."',
-				      `entitle`   ='". escapeString($POST['value3']) ."',
+				      `rotitle`   ='". escapeString($POST['value3']) ."',
 					  `images`   ='". escapeString($POST['value4']) ."',
 					  `rudesc`   ='". escapeString($POST['value5']) ."',
-					  `endesc`   ='". escapeString($POST['value6']) ."'
+					  `rodesc`   ='". escapeString($POST['value6']) ."'
 					  
 					 
 	                  
@@ -90,10 +90,10 @@ if($GET['rem'] == 'nopublic')
 			  $row = (mysql_fetch_assoc($res));
                     $POST['value1'] = $row['category'];
                     $POST['value2'] = $row['rutitle'];
-					$POST['value3'] = $row['entitle'];
+					$POST['value3'] = $row['rotitle'];
 					$POST['value4'] = $row['images'];
 					$POST['value5'] = $row['rudesc'];
-					$POST['value6'] = $row['endesc'];    
+					$POST['value6'] = $row['rodesc'];    
 
      }
      else

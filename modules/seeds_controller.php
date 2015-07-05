@@ -25,9 +25,9 @@ include './bbcode/irb_bbdecoder.php';
 	                               `id`, 
 	                               `public`,
 	                               `rutitle`,
-	                               `entitle`,
+	                               `rotitle`,
 	                               `rudesc`,	
-								   `endesc`
+								   `rodesc`
 	                                
 									FROM `seeds_cats` WHERE `public` = 1 ORDER BY `id` DESC ");   
 	 

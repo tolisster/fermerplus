@@ -104,13 +104,13 @@
                    
         </div>
         <section class="top_line">
-          
-          <div id="top-search">
-            <form method="post" action="/ru/search">
-              <input name="form[value1]" class="input-search" type="text" /><input name="ok" value="Search" id="submit" type="submit" />
+		  <div id="top-language" style="float: left;"><a href="/ru/main">Русский</a> / <a href="/ro/main">Română</a></div>
+		  <div id="top-search">
+            <form method="post" action="/<?=$GET['lang'];?>/search">
+              <input name="form[value1]" class="input-search" type="text" /><input name="ok" value="<?=SEARCH;?>" id="submit" type="submit" />
             </form>
           </div>  
-                </section>
+        </section>
 
           <section id="slider-wrapper">
             <div class="container">
@@ -130,24 +130,24 @@
           </section><!--#slider-->
         <nav class="primary clearfix">
           <ul id="topnav" class="sf-menu sf-js-enabled">
-		  <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=main'); ?>">Главная</a></li>
-          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=news'); ?>">Новости</a></li>
-          <li id="menu-item" class="menu-item"><a href="">Продукты</a>
+		  <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=main'); ?>"><?php echo $GET['lang']=='ru'?'Главная':'Principală';?></a></li>
+          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=news'); ?>"><?=NEWS;?></a></li>
+          <li id="menu-item" class="menu-item"><a href="#"><?=PRODUCTS;?></a>
 			<ul >
-				<li id="menu-item2" ><a href="<?php echo href('lang='. $GET['lang'],'page=seeds'); ?>">Семена</a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=fertilizers'); ?>">Удобрения</a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=1'); ?>">Сетка шпалерная</a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=2'); ?>">Шпагат</a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=7'); ?>">Кассеты рассадные</a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=3'); ?>">Укрывной материал (LUTRASIL)</a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=4'); ?>">Аксессуары для тепличных растений</a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=5'); ?>">Газон исскуственный</a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=6'); ?>">Теплицы профессиональные</a></li>
+				<li id="menu-item2" ><a href="<?php echo href('lang='. $GET['lang'],'page=seeds'); ?>"><?=ARTICLES;?></a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=fertilizers'); ?>"><?=FERTILIZERS;?></a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=1'); ?>"><?=TAPESTRY;?></a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=2'); ?>"><?=TWINE;?></a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=7'); ?>"><?=CASSETES;?></a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=3'); ?>"><?=COVERING;?> (LUTRASIL)</a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=4'); ?>"><?=ACCESSORIES;?></a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=5'); ?>"><?=LAWN;?></a></li>
+				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=6'); ?>"><?=GREENHOUSES;?></a></li>
 			</ul>
 		  </li>
-          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=technology'); ?>">Технологии</a></li>
-          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=prices'); ?>">Болезни</a></li>
-		  <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=about'); ?>">О нас</a></li>
+          <li id="menu-item" class="menu-item"><a style="line-height:36px; " href="<?php echo href('lang='. $GET['lang'],'page=technology'); ?>"><?php echo $GET['lang']=='ru'?'Технологии<br/>выращивания':'Tehnologii <br/>de cultivare';?></a></li>
+          <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=seeds-disease'); ?>"><?=DISEASE;?></a></li>
+		  <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=about'); ?>"><?php echo $GET['lang']=='ru'?'О нас':'Despre noi';?></a></li>
           <!--<li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=services'); ?>">Услуги</a></li>
           <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=contacts'); ?>">Контакты</a></li>-->
           </ul>        </nav><!--.primary-->
@@ -159,23 +159,23 @@
 	</header>
 	<div class="container primary_content_wrap clearfix"><aside id="sidebar">
 	<div id="nav_menu-5" class="widget side_block_1">
-	<h2>Продукты</h2>
+	<h2><?=PRODUCTS;?></h2>
 	<div class="menu-left-navigation-container">
 	   <ul id="menu-left-navigation" class="menu">
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=seeds'); ?>">Семена</a></li>
-       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=fertilizers'); ?>">Удобрения</a></li>
-       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=pellicle'); ?>">Плёнка</a></li>
-       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=1'); ?>">Сетка шпалерная</a></li>
-       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=2'); ?>">Шпагат</a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=peat'); ?>">Торф</a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=7'); ?>">Кассеты рассадные</a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=3'); ?>">Укрывной материал (LUTRASIL)</a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=4'); ?>">Аксессуары для тепличных растений</a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=5'); ?>">Газон исскуственный</a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=6'); ?>">Теплицы профессиональные</a></li>
+	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=seeds'); ?>"><?=ARTICLES;?></a></li>
+       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=fertilizers'); ?>"><?=FERTILIZERS;?></a></li>
+       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=pellicle'); ?>"><?=SKIN;?></a></li>
+       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=1'); ?>"><?=TAPESTRY;?></a></li>
+       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=2'); ?>"><?=TWINE;?></a></li>
+	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=peat'); ?>"><?=PEAT;?></a></li>
+	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=7'); ?>"><?=CASSETES;?></a></li>
+	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=3'); ?>"><?=COVERING;?> (LUTRASIL)</a></li>
+	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=4'); ?>"><?=ACCESSORIES;?></a></li>
+	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=5'); ?>"><?=LAWN;?></a></li>
+	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=6'); ?>"><?=GREENHOUSES;?></a></li>
        </ul></div></div>              
 	   
-	   <div id="my_cyclewidget-7" class="widget side_block_2">                  <h2>Болезни</h2>						
+	   <div id="my_cyclewidget-7" class="widget side_block_2">                  <h2><?=DISEASE;?></h2>						
 						                        <script type="text/javascript">
 						jQuery(document).ready(function(){
 							jQuery('#testi_slider').tinycarousel({ axis: 'y' });
@@ -193,7 +193,7 @@
                           </div>
 							<!-- end of testimonials slider -->
 
-						              </div>                      <div id="my_cyclewidget-5" class="widget side_block_3">                  <h2>Новости</h2>						
+						              </div>                      <div id="my_cyclewidget-5" class="widget side_block_3">                  <h2><?=NEWS;?></h2>						
 						                        <script type="text/javascript">
 						jQuery(document).ready(function(){
 							jQuery('#news_slider').tinycarousel({ axis: 'y' });

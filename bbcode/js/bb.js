@@ -6,11 +6,14 @@ function savesel(doc)
     }               
 }
 
-function click_url()
+function click_url(obj)
 {
-    var url = prompt('Введите URL ссылки');
+	if(typeof obj == 'undefined') obj='text';
+	var url = prompt('Введите URL ссылки');
 	if(url)
-        click_bb('text', 'url='+url, 'url')
+	{
+		click_bb(obj==''?'text':obj, 'url='+url, 'url');
+	}
 }
 
 
@@ -24,6 +27,7 @@ function click_bb(aid, Tag, Close)
 	    Close = '[/' + Close + ']';
 	
     var doc = document.getElementById(aid);
+
     doc.focus();
     
     if(Tag == 'link')

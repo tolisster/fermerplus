@@ -18,7 +18,7 @@ include './bbcode/irb_bbdecoder.php';
 	                               `id`, 
 	                               `public`,
 	                               `rutitle`,
-								   `entitle`,
+								   `rotitle`,
 								   `page`,
 	                               `" . $GET['lang']  . "desc`
 	
