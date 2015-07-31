@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `news` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 INSERT INTO `news` (`id`, `public`, `cat`, `image`, `rutitle`, `entitle`, `rudesc`, `endesc`) VALUES
-(3, 1, '1', 'http://livedemo00.template-help.com/wordpress_34337/wp-content/uploads/2011/05/img1.jpg', 'Добро пожаловать на FARMER+', 'Добро пожаловать на FARMER+', 'Lorem ipsum dolor sit amet, consec tetuer adipi scing elit. Praesent vestibulum molestie lacus. Aenean nonummy hen drerit mauris. Phasellus porta. Fusce suscipit varius mi.', 'Lorem ipsum dolor sit amet, consec tetuer adipi scing elit. Praesent vestibulum molestie lacus. Aenean nonummy hen drerit mauris. Phasellus porta. Fusce suscipit varius mi.');
+(3, 1, '1', '/skins/images/templates/img1.jpg', 'Добро пожаловать на FARMER+', 'Добро пожаловать на FARMER+', 'Lorem ipsum dolor sit amet, consec tetuer adipi scing elit. Praesent vestibulum molestie lacus. Aenean nonummy hen drerit mauris. Phasellus porta. Fusce suscipit varius mi.', 'Lorem ipsum dolor sit amet, consec tetuer adipi scing elit. Praesent vestibulum molestie lacus. Aenean nonummy hen drerit mauris. Phasellus porta. Fusce suscipit varius mi.');
 
 CREATE TABLE IF NOT EXISTS `pages` (
 `id` int(11) NOT NULL,

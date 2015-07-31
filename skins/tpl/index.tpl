@@ -10,9 +10,6 @@
 	<link rel="profile" href="" />
 	<link rel="index" title="Happy Dale" href="" />
 
-	<link rel="pingback" href="http://livedemo00.template-help.com/wordpress_34337/xmlrpc.php" />
-	<link rel="alternate" type="application/rss+xml" title="Happy Dale" href="http://livedemo00.template-help.com/wordpress_34337/?feed=rss2" />
-	<link rel="alternate" type="application/atom+xml" title="Happy Dale" href="http://livedemo00.template-help.com/wordpress_34337/?feed=atom" />
 	<!-- The HTML5 Shim is required for older browsers, mainly older versions IE -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,8 +22,6 @@
 
 	<link rel="stylesheet" type="text/css" media="all" href="/skins/css/style.css" />
   <link rel="stylesheet" type="text/css" media="all" href="/skins/css/prettyPhoto.css" />
-	<link rel="alternate" type="application/rss+xml" title="Happy Dale » Feed" href="http://livedemo00.template-help.com/wordpress_34337/?feed=rss2" />
-<link rel="alternate" type="application/rss+xml" title="Happy Dale » Comments Feed" href="http://livedemo00.template-help.com/wordpress_34337/?feed=comments-rss2" />
 <link rel="stylesheet" id="contact-form-7-css" href="/skins/js/styles.css" type="text/css" media="all" />
 <link rel="stylesheet" id="wp-pagenavi-css" href="/skins/js/pagenavi-css.css" type="text/css" media="all" />
 <script type="text/javascript" src="/skins/js/jquery-1.js"></script>
@@ -35,14 +30,11 @@
 <script type="text/javascript" src="/skins/js/jquery_004.js"></script>
 <script type="text/javascript" src="/skins/js/jquery.js"></script>
 <script type="text/javascript" src="/skins/js/jquery_003.js"></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://livedemo00.template-help.com/wordpress_34337/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://livedemo00.template-help.com/wordpress_34337/wp-includes/wlwmanifest.xml" /> 
-<link rel="index" title="Happy Dale" href="http://livedemo00.template-help.com/wordpress_34337" />
 <meta name="generator" content="WordPress 3.0.1" />
   <!--[if lt IE 9]>
   <style type="text/css">
     .border, .nivo-controlNav {
-      behavior:url(http://livedemo00.template-help.com/wordpress_34337/wp-content/themes/theme1271/PIE.php)
+      behavior:url(/skins/css/PIE/PIE.php)
       }
   </style>
   <![endif]-->
@@ -115,7 +107,7 @@
           <section id="slider-wrapper">
             <div class="container">
                 <div id="slider" class="nivoSlider">
-            <img src='http://livedemo00.template-help.com/wordpress_34337/wp-content/uploads/2011/05/slide1.jpg' alt='' title='#sliderCaption1' />              <img src='http://livedemo00.template-help.com/wordpress_34337/wp-content/uploads/2011/05/slide2.jpg' alt='' title='#sliderCaption2' />              <img src='http://livedemo00.template-help.com/wordpress_34337/wp-content/uploads/2011/05/slide3.jpg' alt='' title='#sliderCaption3' />              <img src='http://livedemo00.template-help.com/wordpress_34337/wp-content/uploads/2011/05/slide4.jpg' alt='' title='#sliderCaption4' />              <img src='http://livedemo00.template-help.com/wordpress_34337/wp-content/uploads/2011/05/slide5.jpg' alt='' title='#sliderCaption5' />        </div>
+            <img src='/skins/images/templates/slide1.jpg' alt='' title='#sliderCaption1' />              <img src='/skins/images/templates/slide2.jpg' alt='' title='#sliderCaption2' />              <img src='/skins/images/templates/slide3.jpg' alt='' title='#sliderCaption3' />              <img src='/skins/images/templates/slide4.jpg' alt='' title='#sliderCaption4' />              <img src='/skins/images/templates/slide5.jpg' alt='' title='#sliderCaption5' />        </div>
 <div id="sliderCaption1" class="nivo-html-caption">
   </div>
 <div id="sliderCaption2" class="nivo-html-caption">
