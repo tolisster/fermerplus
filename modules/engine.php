@@ -59,14 +59,18 @@
 if(isset($_SESSION['user_data']))    
         $profilemenu2 = 'style="display:block;"'; 
     else  
-        $profilemenu2 =  'style="display:none;"';
+        $profilemenu2 =  'style="daaisplay:none;"';
   
 
 
 $tpl = getTpl('main/diseases');
 $tpl2 = getTpl('main/news');
+$tpl3 = getTpl('main/products');
+
+$products = '';
 $main_diseases = '';
 $mnews = '';
+
 
 $res = mysqlQuery("SELECT `id`, `public`, `rutitle`, `rotitle`, SUBSTRING_INDEX(`" . $GET['lang']  . "content`,' ','30') AS `" . $GET['lang']  . "content`
 	              FROM `seeds_disease` WHERE  `public` = 1  ");   
@@ -87,6 +91,30 @@ if(mysql_num_rows($res) > 0)
                           {
                                 $main_diseases = DEXIST_A;
                           }
+
+
+
+$res = mysqlQuery("SELECT `id` ,`public`, `".$GET["lang"]."title` as `title`, `cat` FROM `rightmenu` WHERE `public` = 1");   
+	 
+if(mysql_num_rows($res) > 0)
+                          {
+                     while ($row = mysql_fetch_assoc($res))
+                            {
+
+                             $res1 = mysqlQuery("SELECT `cat` FROM `articles` WHERE `cat` = '".$row['cat']."' AND `public` = 1");   
+                             $row1 = mysql_fetch_assoc($res1);
+                  
+		               $row['title'] = '<a href="/'.$GET["lang"].'/articles/read/'.$row1['cat'].'">'.htmlspecialchars($row['title']).'</a>';
+                               $products .= parseTpl($tpl3, $row);
+							}
+			  
+                          }
+		 
+                        else
+                          {
+                                $products = DEXIST_A;
+                          }
+				
 						  
 						  
 
@@ -109,8 +137,5 @@ if(mysql_num_rows($res) > 0)
                         else
                           {
                                 $mnews = DEXIST_A;
-                          }
-		 
-		 
-	
+                          }	
 		 

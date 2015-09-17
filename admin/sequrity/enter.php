@@ -23,8 +23,10 @@
 	// die;
 	 
 	// $_SESSION['admin'] = true; 
+
+
     foreach($admins as $admin => $pass)    
-        if($POST['value1'] === $admin && md5($POST['value2']) === $pass)    
+        if($POST['value1'] === $admin && $POST['value2'] === $pass)    
             $_SESSION['admin'] = true;   
 
                  

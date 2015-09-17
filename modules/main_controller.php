@@ -9,6 +9,7 @@
 include './libs/mysql.php'; 
 include './bbcode/irb_bbdecoder.php';
 
+
    if(!empty($_SERVER['HTTP_REFERER']) 
 	    && trim($_SERVER['HTTP_REFERER'], '/') !== trim(IRB_HOST, '/') 
 	    && strpos($_SERVER['HTTP_REFERER'], 'main') === true)

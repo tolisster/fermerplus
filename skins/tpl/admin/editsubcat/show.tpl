@@ -3,10 +3,10 @@
         </div>
 		
 		<div id="leftside">
-               <h2><?php echo PTITLE; ?></h2>
+
+               <h3><?php echo $about; ?></h3>
                   <div class="date"><a href="<?php echo href('rem=new') ?>" title="#"><?php echo ADDNEW; ?></a></div>
-               <?php echo $seeds; ?>    
-               <?php echo $articles; ?>
+                   <?php echo $articles; ?>
 	                  <?php echo $page_menu; ?>
         </div>
 </div>

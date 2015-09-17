@@ -8,8 +8,9 @@
  
 include './libs/mysql.php'; 
 include './bbcode/irb_bbdecoder.php';
+require_once 'rightmenu.php';	
+
    
-  
    if(!empty($_SERVER['HTTP_REFERER']) 
 	    && trim($_SERVER['HTTP_REFERER'], '/') !== trim(IRB_HOST, '/') 
 	    && strpos($_SERVER['HTTP_REFERER'], 'main') === true)
@@ -21,9 +22,10 @@ include './bbcode/irb_bbdecoder.php';
 	$tpl = getTpl('seeds-disease/row');
 	$tpl2  = getTpl('seeds-disease/fullrow');
     $pellicle = '';
-	$blablabla = '';
-    
+    $blablabla = '';
 
+
+   
 	if(is_numeric($GET['news']))
 	{
        $res = mysqlQuery("SELECT 
@@ -44,10 +46,7 @@ include './bbcode/irb_bbdecoder.php';
 						  
 			                 $page_menu = ''; 
                              $pellicle = parseTpl($tpl2, $row);
-							 
-							 
-							 
-							 
+				 
 							 
 
                        }
@@ -63,6 +62,11 @@ include './bbcode/irb_bbdecoder.php';
 	    
 	   include './libs/irb_paginator.php';   
        $paginator = new IRB_Paginator($GET['num'], 50);  
+
+
+          
+
+
 	
             $res = $paginator -> countQuery("SELECT 
 	                               `id`, 
@@ -76,18 +80,14 @@ include './bbcode/irb_bbdecoder.php';
                 $page_menu = $paginator -> createMenu();                    
                        if(mysql_num_rows($res) > 0)
                           {
+ 
                                while ($row = mysql_fetch_assoc($res))
                                   {
+
 		                              $row['title'] = htmlspecialchars($row[''. $GET['lang']  . 'title']);
 		                              $row['content'] = ($row[''. $GET['lang']  . 'content']. '....');
                                       $row['url'] = href('news=' . $row['id']);
-                                      $pellicle .= parseTpl($tpl, $row);
-									  
-									  
-                          
-									  
-									  
-									  
+                                      $pellicle .= parseTpl($tpl, $row);					  
 									  
                                   }
 			  
@@ -97,10 +97,27 @@ include './bbcode/irb_bbdecoder.php';
                           {
                                 $pellicle = DEXIST_A;
                           }
-						  
-						  
-						  
-						  
+
+
+
+
+       
+$res = mysqlQuery("SELECT 
+	           `id`, 
+	           `" . $GET['lang']  . "title`
+  	           
+			   FROM `rightmenu`");
+
+
+   while ($row = mysql_fetch_assoc($res))
+	  {
+
+      
+		  $row['title'] = htmlspecialchars($row[''. $GET['lang']  . 'title']);
+                  $pellicle .= parseTpl($tpl, $row);
+     						  				  
+
+      }								  				  
 
       }
 	  

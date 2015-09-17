@@ -39,17 +39,13 @@
        exit(file_get_contents('./404.html'));	
 	}
         
-    
-	
-	
-	
-	
-     
+
+         
    $page = $GET['page'];
         
-      
-    switch($GET['page'])  
-    {  
+
+    switch($GET['page'])  {
+   
         case 'main':
 		include './modules/main_controller.php';
 		include './modules/engine.php';
@@ -180,10 +176,12 @@
      default: 
            include './modules/main/router.php';  
         break;     
-    }          
-           
-    $content = ob_get_contents();    
+    } 
+
+    $content = ob_get_contents();  
+  
     ob_end_clean();
+
 	
 	include './skins/tpl/index.tpl';
  

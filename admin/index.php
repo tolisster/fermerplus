@@ -98,8 +98,27 @@
 			case 'events':     
                 include IRB_ROOT .'admin/events/router.php';  
             break;
-			
-	
+
+            case 'seeds_cats':     
+                include IRB_ROOT .'admin/seeds_cats/router.php';  
+            break;
+
+            case 'seeds_subcats':     
+                include IRB_ROOT .'admin/seeds_subcats/router.php';  
+            break;
+
+            case 'seeds':     
+                include IRB_ROOT .'admin/seeds_orig/router.php';  
+            break;
+
+		
+	       case 'editcateg':     
+                include IRB_ROOT .'admin/editcateg/router.php';  
+            break;
+
+            case 'editsubcat':     
+                include IRB_ROOT .'admin/editsubcat/router.php';  
+            break;
 		
 			case 'prices':     
                 include IRB_ROOT .'admin/prices/router.php';  

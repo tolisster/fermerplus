@@ -128,13 +128,7 @@
 			<ul >
 				<li id="menu-item2" ><a href="<?php echo href('lang='. $GET['lang'],'page=seeds'); ?>"><?=ARTICLES;?></a></li>
 				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=fertilizers'); ?>"><?=FERTILIZERS;?></a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=1'); ?>"><?=TAPESTRY;?></a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=2'); ?>"><?=TWINE;?></a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=7'); ?>"><?=CASSETES;?></a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=3'); ?>"><?=COVERING;?> (LUTRASIL)</a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=4'); ?>"><?=ACCESSORIES;?></a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=5'); ?>"><?=LAWN;?></a></li>
-				<li id="menu-item" ><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=6'); ?>"><?=GREENHOUSES;?></a></li>
+                                <?php echo $products; ?>
 			</ul>
 		  </li>
           <li id="menu-item" class="menu-item"><a style="line-height:36px; " href="<?php echo href('lang='. $GET['lang'],'page=technology'); ?>"><?php echo $GET['lang']=='ru'?'Технологии<br/>выращивания':'Tehnologii <br/>de cultivare';?></a></li>
@@ -151,20 +145,10 @@
 	</header>
 	<div class="container primary_content_wrap clearfix"><aside id="sidebar">
 	<div id="nav_menu-5" class="widget side_block_1">
-	<h2><?=PRODUCTS;?></h2>
 	<div class="menu-left-navigation-container">
+        <h2>Slide Show</h2>
 	   <ul id="menu-left-navigation" class="menu">
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=seeds'); ?>"><?=ARTICLES;?></a></li>
-       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=fertilizers'); ?>"><?=FERTILIZERS;?></a></li>
-       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=pellicle'); ?>"><?=SKIN;?></a></li>
-       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=1'); ?>"><?=TAPESTRY;?></a></li>
-       <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=2'); ?>"><?=TWINE;?></a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=peat'); ?>"><?=PEAT;?></a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=7'); ?>"><?=CASSETES;?></a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=3'); ?>"><?=COVERING;?> (LUTRASIL)</a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=4'); ?>"><?=ACCESSORIES;?></a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=5'); ?>"><?=LAWN;?></a></li>
-	   <li id="menu-item" class="menu-item"><a href="<?php echo href('lang='. $GET['lang'],'page=articles','rem=read','sel=6'); ?>"><?=GREENHOUSES;?></a></li>
+	  Slide Show
        </ul></div></div>              
 	   
 	   <div id="my_cyclewidget-7" class="widget side_block_2">                  <h2><?=DISEASE;?></h2>						

@@ -950,7 +950,6 @@ li.sfHover > a > .sf-sub-indicator {
 	}
 	.menu li{
 		padding:3px 0 3px 17px;
-		background:url(/skins/images/templates//marker.gif) left 9px no-repeat;
 		}
 
 
@@ -2174,5 +2173,6 @@ input, select, textarea {
 .mdis {float:left;}
 .mdis  h1{ font-size:12px; color:#000000;}
 .mdis img{ display:none;}
+.mdis_prod{ font-size: 4px;}
 
 /* Always remember to compress your live stylesheet and keep an uncompressed backup */
