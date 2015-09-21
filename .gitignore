@@ -1,0 +1,5 @@
+# Directory-based project format
+.idea/
+
+# Config
+config.php
