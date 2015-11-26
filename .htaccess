@@ -1,4 +1,4 @@
-php_value display_errors 0
+php_value display_errors 1
 php_value error_reporting 16357
 
 RewriteEngine    on 

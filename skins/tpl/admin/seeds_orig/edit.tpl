@@ -30,6 +30,11 @@
 <label>img</label>
 <input size="70" name="form[value4]" type="text" value="<?php echo $POST['value4'] ?>"/>
 </div>
+<div class="inp">
+<label>slide_img</label>
+<input size="70" name="form[value8]" type="text" value="<?php echo $POST['value8'] ?>"/>
+</div>
+
 
 
 <div class="inp">

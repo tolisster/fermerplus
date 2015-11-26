@@ -20,7 +20,7 @@
     </div>
   <![endif]-->
 
-	<link rel="stylesheet" type="text/css" media="all" href="/skins/css/style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/skins/css/style.css" />
   <link rel="stylesheet" type="text/css" media="all" href="/skins/css/prettyPhoto.css" />
 <link rel="stylesheet" id="contact-form-7-css" href="/skins/js/styles.css" type="text/css" media="all" />
 <link rel="stylesheet" id="wp-pagenavi-css" href="/skins/js/pagenavi-css.css" type="text/css" media="all" />
@@ -88,6 +88,7 @@
   <!-- Custom CSS -->
   	</head>
 <body class="home blog cat-20-id"> 
+
 <div id="main"><!-- this encompasses the entire Web site -->
 	<header id="header">
       <div class="container">
@@ -146,10 +147,88 @@
 	<div class="container primary_content_wrap clearfix"><aside id="sidebar">
 	<div id="nav_menu-5" class="widget side_block_1">
 	<div class="menu-left-navigation-container">
-        <h2>Slide Show</h2>
-	   <ul id="menu-left-navigation" class="menu">
-	  Slide Show
-       </ul></div></div>              
+
+
+
+
+	<!-- it works the same with all jquery version from 1.x to 2.x -->
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    
+<script type="text/javascript" src="/skins/js/jssor.js"></script>
+    <script type="text/javascript" src="/skins/js/jssor.slider.js"></script>    <script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $PlayOrientation: 2,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 2,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        });
+    </script>
+    <!-- Jssor Slider Begin -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+    <div id="slider1_container" style="position: relative; top: -21px; left: -23px; width: 270px;
+        height: 297px;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 270px; height: 342px;
+            overflow: hidden;">
+        <?php echo $slider; ?>
+        </div>
+        
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+        <style>
+            /* jssor slider arrow navigator skin 08 css */
+            /*
+            .jssora08l                  (normal)
+            .jssora08r                  (normal)
+            .jssora08l:hover            (normal mouseover)
+            .jssora08r:hover            (normal mouseover)
+            .jssora08l.jssora08ldn      (mousedown)
+            .jssora08r.jssora08rdn      (mousedown)
+            */
+            .jssora08l, .jssora08r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                background: url(../img/a08.png) no-repeat;
+                overflow: hidden;
+                opacity: .4;
+                filter: alpha(opacity=40);
+            }
+            .jssora08l { background-position: -5px -35px; }
+            .jssora08r { background-position: -65px -35px; }
+            .jssora08l:hover { background-position: -5px -35px; opacity: .8; filter:alpha(opacity=80); }
+            .jssora08r:hover { background-position: -65px -35px; opacity: .8; filter:alpha(opacity=80); }
+            .jssora08l.jssora08ldn { background-position: -5px -35px; opacity: .3; filter:alpha(opacity=30); }
+            .jssora08r.jssora08rdn { background-position: -65px -35px; opacity: .3; filter:alpha(opacity=30); }
+        </style>
+    </div>
+    <!-- Jssor Slider End -->
+</div></div>              
 	   
 	   <div id="my_cyclewidget-7" class="widget side_block_2">                  <h2><?=DISEASE;?></h2>						
 						                        <script type="text/javascript">
@@ -230,4 +309,3 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 </div>
 
 </body></html>
-

@@ -66,10 +66,12 @@ if(isset($_SESSION['user_data']))
 $tpl = getTpl('main/diseases');
 $tpl2 = getTpl('main/news');
 $tpl3 = getTpl('main/products');
+$tpl4= getTpl('main/slide');
 
 $products = '';
 $main_diseases = '';
 $mnews = '';
+$slider = '';
 
 
 $res = mysqlQuery("SELECT `id`, `public`, `rutitle`, `rotitle`, SUBSTRING_INDEX(`" . $GET['lang']  . "content`,' ','30') AS `" . $GET['lang']  . "content`
@@ -114,10 +116,30 @@ if(mysql_num_rows($res) > 0)
                           {
                                 $products = DEXIST_A;
                           }
+
+$res = mysqlQuery("SELECT `".$GET["lang"]."title` as `title`,`category` as `cat`,`slide_img` as `img` FROM `seeds` WHERE `public` = 1 AND `slide_img` !='' ORDER BY rand()");   
+	 
+if(mysql_num_rows($res) > 0)
+                          {
+                     while ($row = mysql_fetch_assoc($res))
+                            {
+
+                               $row['title'] = htmlspecialchars($row['title']);
+                               $row["url"] = '/'.$GET["lang"].'/all-seeds/read/'.$row['cat'];
+                               $row['img'] = $row['img'];
+                               
+                               $slider .= parseTpl($tpl4, $row);
+							}
+			  
+                          }
+		 
+                        else
+                          {
+                                $products = DEXIST_A;
+                          }
 				
 						  
 						  
-
 
 $res = mysqlQuery("SELECT `id`, `public`, `rutitle`, `rotitle`, SUBSTRING_INDEX(`" . $GET['lang']  . "desc`,' ','30') AS `" . $GET['lang']  . "desc`
 	              FROM `news` WHERE  `public` = 1  ");   

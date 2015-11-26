@@ -63,6 +63,7 @@ if($GET['rem'] == 'nopublic')
 			        `rutitle`   ='name',
 					`rotitle`   ='',
 					`images`   ='',
+                                        `slide_img`   ='',
 					`rudesc`   ='',
 					`rodesc`   =''
 		           ");
@@ -84,6 +85,7 @@ if($GET['rem'] == 'nopublic')
 				      `rutitle`   ='". escapeString($POST['value2']) ."',
 				      `rotitle`   ='". escapeString($POST['value3']) ."',
 					  `images`   ='". escapeString($POST['value4']) ."',
+                                          `slide_img`   ='". escapeString($POST['value8']) ."',
 					  `rudesc`   ='". escapeString($POST['value5']) ."',
 					  `rodesc`   ='". escapeString($POST['value6']) ."'
 					  
@@ -102,6 +104,7 @@ if($GET['rem'] == 'nopublic')
                     $POST['value2'] = $row['rutitle'];
 					$POST['value3'] = $row['rotitle'];
 					$POST['value4'] = $row['images'];
+                                        $POST['value8'] = $row['slide_img'];
 					$POST['value5'] = $row['rudesc'];
 					$POST['value6'] = $row['rodesc'];    
 
