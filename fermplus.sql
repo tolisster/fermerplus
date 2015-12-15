@@ -314,6 +314,7 @@ CREATE TABLE IF NOT EXISTS `seeds` (
   `public` int(1) NOT NULL,
   `category` varchar(255) NOT NULL,
   `images` varchar(255) NOT NULL,
+  `slide_img` varchar(255) NOT NULL,
   `rutitle` varchar(255) NOT NULL,
   `rotitle` varchar(255) NOT NULL,
   `rudesc` text NOT NULL,
