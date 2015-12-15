@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="/skins/js/ga.js" async="" type="text/javascript"></script><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
 <title>
-	FARMER + | Главная страница	</title>
+	FERMER PLUS | Главная страница	</title>
 	<meta name="Keywords" content="Семена, Урожай, Болезни, Сельхозтехника, Секреты, Бизнес овощами, Фармер плюс, Красивые помидоры, Новые помидоры" />
 	<meta name="Description" content="Новости сельскохозяйственной отрасли. Справочник компаний, Семена, Болезни органов управления АПК, ВУЗов и т.д. Советы по ведению бизнеса в сельском хозяйстве. Визитки, блоги фермеров и фермерских хозяйств. Форум." />
 	<meta charset="UTF-8" />
@@ -93,7 +93,7 @@
 	<header id="header">
       <div class="container">
         <div class="logo">
-                   <a href="/"><img style="margin-left:-10px;" src="/skins/images/templates/logo.png" alt="FARMER+" title="veggie farm" /></a>
+                   <a href="/"><img style="margin-left:-10px;" src="/skins/images/templates/logo.png" alt="FERMER PLUS" title="FERMER PLUS" /></a>
                    
         </div>
         <section class="top_line">
@@ -282,7 +282,7 @@
 		</div>        </section>
                           
                       <div class="copy">
-              <div>FARMER + © 2012 <b>|</b> <a href="">Privacy Policy</a></div>
+              <div>FERMER PLUS © 2015 <b>|</b> <a href="">Privacy Policy</a></div>
               <div><!-- {%FOOTER_LINK} --></div>
             </div>
 		</div><!--.container-->

@@ -370,7 +370,7 @@ body {
 	min-width:980px;
 	}
 body{
-	background-color:#6fbe01;
+	background: url('/skins/images/templates/bg.png') #6fbe01;
 	color: #353535;
 	font: 100%/1.125em Arial, Helvetica, sans-serif;
 	position:relative;
@@ -378,7 +378,7 @@ body{
 
 #main {
 	font-size:.75em;
-	background:url(/skins/images/templates//shadow_bg.png) center top no-repeat;
+	background: url('/skins/images/templates/shadow_bg.png') center top no-repeat;
 	min-width:970px;
 	padding-bottom:40px;
 }
@@ -405,16 +405,12 @@ body{
 /* Logo */
 .logo {
 	position:absolute;
-	left:0;
-	top:0;
 	z-index:50;
-	background:url(/skins/images/templates//logo_bg.png) left top no-repeat;
-	width:317px;
-	height:300px;
+	background:url(/skins/images/templates/logo_bg.png) left top no-repeat;
 	}
 	.logo > a{
 		display:inline-block;
-		margin:38px 0 0 41px;
+		margin:25px 0 0 25px;
 		}
 	.logo .description{
 		color:#ee7700;
@@ -436,8 +432,8 @@ body{
 			}
 
 .top_line{
-	background:url(/skins/images/templates//top_tail.png) left top repeat-x;
-	height:56px;
+	background: url('/skins/images/templates/bottom_tail.png') right bottom no-repeat black;
+	height:125px;
 	position:relative;
 	z-index:40;
 	}
@@ -586,7 +582,7 @@ body{
 	left:25px;
 	top: 300px;
 	text-align:center;
-	background:url(/skins/images/templates//slider_navi_bg.png) left top repeat;
+	background:url(/skins/images/templates/slider_navi_bg.png) left top repeat;
 	z-index:60;
 	padding:0 10px 0 14px;
 	webkit-border-radius: 11px;
@@ -622,7 +618,7 @@ body{
 	text-indent:-9999px;
 	border:0;
 	top:50%;
-	background:url(/skins/images/templates//direction_nav.png) no-repeat 0 0;
+	background:url(/skins/images/templates/direction_nav.png) no-repeat 0 0;
 }
 a.nivo-nextNav {
 	right:0;
@@ -661,7 +657,7 @@ a.nivo-prevNav:hover {
 /* Primary navigation */
 nav.primary {
 	height:76px;
-	background:url(/skins/images/templates//menu_tail.png) left top repeat-x;	
+	background:url(/skins/images/templates/menu_tail.png) left top repeat-x;
 	position:relative;
 	z-index:40;
 	margin-top:-6px;
@@ -744,7 +740,7 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu li li li {
 }
 .sf-menu > li.sfHover > a, .sf-menu > li > a:hover, .sf-menu > li > a:active, .sf-menu > li.current-menu-item > a, .sf-menu > li.current-menu-ancestor > a {
-	background:url(/skins/images/templates//menu_act.gif) left bottom repeat-x #f4b40a;
+	background:url(/skins/images/templates/menu_act.gif) left bottom repeat-x #f4b40a;
 	outline:		0;
 }
 
@@ -762,7 +758,7 @@ ul.sf-menu li li li.sfHover ul {
 	height:			10px;
 	text-indent: 	-999em;
 	overflow:		hidden;
-	background:		url(/skins/images/templates//arrows-ffffff.png) no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+	background:		url(/skins/images/templates/arrows-ffffff.png) no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
 }
 a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 	top:			.8em;
@@ -791,7 +787,7 @@ li.sfHover > a > .sf-sub-indicator {
 
 /*** shadows for all but IE6 ***/
 .sf-shadow ul {
-	background:	url(/skins/images/templates//shadow.png) no-repeat bottom right;
+	background:	url(/skins/images/templates/shadow.png) no-repeat bottom right;
 	padding: 0 8px 9px 0;
 	-moz-border-radius-bottomleft: 17px;
 	-moz-border-radius-topright: 17px;
@@ -824,10 +820,10 @@ li.sfHover > a > .sf-sub-indicator {
 	text-align:center;
 	font-size:1.5em;
 	color:#fff;
-	background:url(/skins/images/templates//menu_bg.gif) left bottom repeat-x #6aa417;
+	background:url(/skins/images/templates/menu_bg.gif) left bottom repeat-x #6aa417;
 	}
     .sf-menu > li > a:hover{
-		background:url(/skins/images/templates//menu_act.gif) left bottom repeat-x #f4b40a;
+		background:url(/skins/images/templates/menu_act.gif) left bottom repeat-x #f4b40a;
 		}
 
 .sf-menu li ul{
@@ -859,7 +855,7 @@ li.sfHover > a > .sf-sub-indicator {
 	color:#b3ff66;
 	position:absolute;
 	right:130px;
-	top:15px;
+	bottom:10px;
 	width:228px;
 	height:24px;
 }
@@ -872,7 +868,7 @@ li.sfHover > a > .sf-sub-indicator {
 #top-search {
 	position:absolute;
 	right:15px;
-	top:13px;
+	bottom:14px;
 	width:228px;
 	height:24px;
 	}
@@ -881,7 +877,7 @@ li.sfHover > a > .sf-sub-indicator {
 		height:16px;
 		margin:0;
 		float:left;
-		background:url(/skins/images/templates//search_tail.gif) left bottom repeat-x #fff;
+		background:url(/skins/images/templates/search_tail.gif) left bottom repeat-x #fff;
 		font:12px Arial, Helvetica, sans-serif;
 		border:none;
 		padding:4px 10px;
@@ -895,7 +891,7 @@ li.sfHover > a > .sf-sub-indicator {
 		float:left;
 		padding:0;
 		border:none;
-		background:url(/skins/images/templates//search_b.gif) left bottom repeat-x #00a517;
+		background:url(/skins/images/templates/search_b.gif) left bottom repeat-x #00a517;
 		font:10px Arial, Helvetica, sans-serif;
 		color:#fff;
 		text-transform:uppercase;
@@ -915,7 +911,7 @@ li.sfHover > a > .sf-sub-indicator {
 	z-index:1;
 	padding-bottom:3px;
 	margin-top:-4px;
-	background:url(/skins/images/templates//prime_cont_bg.gif) left top repeat-y #f2eecd;
+	background:url(/skins/images/templates/prime_cont_bg.gif) left top repeat-y #f2eecd;
 	}
 	
 #content {
@@ -1025,7 +1021,7 @@ li.sfHover > a > .sf-sub-indicator {
 	}
 	.list li{
 		padding:3px 5px 3px 20px;
-		background:url(/skins/images/templates//marker2.gif) left 10px no-repeat;
+		background:url(/skins/images/templates/marker2.gif) left 10px no-repeat;
 		}
 
 
@@ -1439,7 +1435,7 @@ nav.oldernewer {
 				width:290px;
 				height:150px;
 				position:relative;
-				background:#333333 url(/skins/images/templates//loading.gif) 50% 50% no-repeat;
+				background:#333333 url(/skins/images/templates/loading.gif) 50% 50% no-repeat;
 				-webkit-transition: all .2s ease-in-out;
 				-moz-transition: all .2s ease-in-out;
 				-o-transition: all .2s ease-in-out;
@@ -1466,7 +1462,7 @@ nav.oldernewer {
 				top:-152px;
 				width:290px;
 				height:150px;
-				background:url(/skins/images/templates//magnify.png) 50% 50% no-repeat;
+				background:url(/skins/images/templates/magnify.png) 50% 50% no-repeat;
 				cursor:pointer;
 				-webkit-transition: all .2s ease-in-out;
 				-moz-transition: all .2s ease-in-out;
@@ -1654,7 +1650,7 @@ nav.oldernewer {
 		}
 		.testimonials li blockquote {
 			border:none;
-			background:url(/skins/images/templates//quotes.png) no-repeat 0 0;
+			background:url(/skins/images/templates/quotes.png) no-repeat 0 0;
 			margin:0;
 			padding:0;
 			}
@@ -1683,9 +1679,9 @@ nav.oldernewer {
 		height: 120px;
 		overflow: hidden;
 		position: relative;
-		background:url(/skins/images/templates//testi_shad.png) left bottom repeat-x;
+		background:url(/skins/images/templates/testi_shad.png) left bottom repeat-x;
 		}
-		#testi_slider .buttons { display: block; width:23px; height:23px; text-indent:-999em; position:absolute; right:0; top:-49px; background:url(/skins/images/templates//testi_arr.png) left bottom no-repeat; z-index:99;}
+		#testi_slider .buttons { display: block; width:23px; height:23px; text-indent:-999em; position:absolute; right:0; top:-49px; background:url(/skins/images/templates/testi_arr.png) left bottom no-repeat; z-index:99;}
 		#testi_slider .next {right:-17px}
 		#testi_slider .prev {background-position:left top; right:8px;}
 		#testi_slider .disable { visibility: hidden; }
@@ -1726,9 +1722,9 @@ nav.oldernewer {
 		height: 120px;
 		overflow: hidden;
 		position: relative;
-		background:url(/skins/images/templates//testi_shad.png) left bottom repeat-x;
+		background:url(/skins/images/templates/testi_shad.png) left bottom repeat-x;
 		}
-		#news_slider .buttons { display: block; width:23px; height:23px; text-indent:-999em; position:absolute; right:0; top:-47px; background:url(/skins/images/templates//testi_arr.png) left bottom no-repeat; z-index:99;}
+		#news_slider .buttons { display: block; width:23px; height:23px; text-indent:-999em; position:absolute; right:0; top:-47px; background:url(/skins/images/templates/testi_arr.png) left bottom no-repeat; z-index:99;}
 		#news_slider .next {right:-17px}
 		#news_slider .prev {background-position:left top; right:8px;}
 		#news_slider .disable { visibility: hidden; }
@@ -1802,13 +1798,13 @@ nav.oldernewer {
 		    background-repeat:no-repeat;
 			}
 			.soc_list li.s_item-1 a{
-				background-image:url(/skins/images/templates//soc01.png);
+				background-image:url(/skins/images/templates/soc01.png);
 				}
 			.soc_list li.s_item-2 a{
-				background-image:url(/skins/images/templates//soc02.png);
+				background-image:url(/skins/images/templates/soc02.png);
 				}
 			.soc_list li.s_item-3 a{
-				background-image:url(/skins/images/templates//soc03.png);
+				background-image:url(/skins/images/templates/soc03.png);
 				}
 				.soc_list li a:hover{
 					background-position:left bottom;

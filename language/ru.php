@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////    
 
 
-   define('MAIN_TITLE',     'FARMER +'); 
+   define('MAIN_TITLE',     'FERMER PLUS');
    
    define('SEEDS',     'Семена');
    define('DISEASE',     'Болезни');
@@ -31,7 +31,7 @@
    define('BIOLOGYANDAGRO', 'Биология и Агротехника');
    define('GOTOBIBLIO', 'Перейти в библиотеку');
    define('SEARCHBYREQUEST', 'Поиск по запросу');
-   define('SEMENAFERMERPLUS', 'Семена FERMER +');
+   define('SEMENAFERMERPLUS', 'Семена FERMER PLUS');
    
    define('SKIN', 'Плёнка');
    define('TAPESTRY', 'Сетка шпалерная');
