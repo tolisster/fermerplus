@@ -49,7 +49,7 @@ if(in_array("main",$fermer)) $isPage = $page; else $isPage = 'none';
 require_once("./modules/router_controller.php");
 
 $router = new Router();
-$getPages = $router->readPages($isPage); 
+$router->readPages($isPage); 
  
   $content = ob_get_contents();  
   
