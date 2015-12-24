@@ -38,27 +38,18 @@
        header("HTTP/1.1 404 Not Found");      
        exit(file_get_contents('./404.html'));	
 	}
-    
-    
-       $page = $GET['page'];
+	
+   $page = $GET['page'];
 
 
-  $fermer = array('main','about','services','contacts','seeds','all-seeds','seeds-disease','seeds-biology','fertilizers','all-fertilizers','fertilizers-products','peat','news','pellicle','articles','contacts','search');
-        
+  $fermer = array('main'=>'main','about'=>'about','services'=>'services','contacts'=>'contacts','seeds'=>'seeds','all-seeds'=>'all-seeds','seeds-disease'=>'seeds-disease','seeds-biology'=>'seeds-biology','fertilizers'=>'fertilizers','all-fertilizers'=>'all-fertilizers','fertilizers-products'=>'fertilizers-products','peat'=>'peat','news'=>'news','pellicle'=>'pellicle','articles'=>'articles','contacts'=>'contacts','search'=>'search');
+
+if(in_array("main",$fermer)) $isPage = $page; else $isPage = 'none';  
            
-  if(!in_array($page,$fermer)) { include './modules/main/router.php'; break;}
-        
-    foreach($fermer as $ferm)  {  
-           
-  if($page == $ferm){
-   		 
-             include './modules/'.$ferm.'_controller.php';
-             include './modules/engine.php';
-             include './modules/'.$ferm.'/router.php';  
-             break;
-    
- }
-}
+require_once("./modules/router_controller.php");
+
+$router = new Router();
+$getPages = $router->readPages($isPage); 
  
   $content = ob_get_contents();  
   
