@@ -1,57 +1,5 @@
 <?php   
-
-/** 
-* Newsroom (Controller) 
-* Блок новостей (контроллер) 
-* @author IT studio IRBIS-team 
-* @copyright © 2009 IRBIS-team 
-*/
-/////////////////////////////////////////////////////////
-
-/**
-* Generation of page of an error at access out of system
-* Генерация страницы ошибки при доступе вне системы
-*/
-    if(!defined('IRB_KEY'))
-    {
-       header("HTTP/1.1 404 Not Found");      
-       exit(file_get_contents('../../404.html'));
-    } 
-//////////////////////////////////////////////////////////
-
-
- if ( $GET['page']  == 'main' and $GET['rem']  == 'read'  )  {  $css_patch = 'main.css'; }    else  {  $css_patch = 'style.css'; } ;
- 
- 
- 
- if ( $GET['page']  == 'projects' and $GET['news']  == 'all'  )  {  $projects_menu = ''; }    else  {  $projects_menu = 'style="display:none;"'; } ;
- 
-  if ( $GET['sel']  == 'all')  {  $sel = '  class="select"'; }    else  {  $sel = ''; } ;
-  if ( $GET['sel']  == 'a')  {  $sel2 = '  class="select"'; }    else  {  $sel2 = ''; } ;
-  if ( $GET['sel']  == 'b')  {  $sel3 = '  class="select"'; }    else  {  $sel3 = ''; } ;
-  if ( $GET['sel']  == 'c')  {  $sel4 = '  class="select"'; }    else  {  $sel4 = ''; } ;
-  
-  
-  
-  if ( $GET['lang']  == 'ro')  {  $lang = '  selected="selected"'; }    else  {  $lang = ''; } ;
-  if ( $GET['lang']  == 'ru')  {  $lang2 = '   selected="selected"'; }    else  {  $lang2 = ''; } ;
-  if ( $GET['lang']  == 'en')  {  $lang3 = '   selected="selected"'; }    else  {  $lang3 = ''; } ;
- 
-
- if ( $GET['page']  == 'main')  {  $smenu = ''; }    else  {  $smenu = 'style="display:none;"'; } ;
- if ( $GET['page']  == 'solutions')  {  $smenu1 = ''; }    else  {  $smenu1 = 'style="display:none;"'; } ;
- if ( $GET['page']  == 'services')  {  $smenu2 = ''; }    else  {  $smenu2 = 'style="display:none;"'; } ;
- if ( $GET['page']  == 'partners')  {  $smenu3 = ''; }    else  {  $smenu3 = 'style="display:none;"'; } ;
- if ( $GET['page']  == 'events')  {  $smenu4 = ''; }    else  {  $smenu4 = 'style="display:none;"'; } ;
- if ( $GET['page']  == 'forum')  {  $smenu5 = ''; }    else  {  $smenu5 = 'style="display:none;"'; } ;
- if ( $GET['page']  == 'support')  {  $smenu6 = ''; }    else  {  $smenu6 = 'style="display:none;"'; } ;
- 
- 
- 
-  if ( $GET['page']  == 'main')  {  $slide = ''; }    else  {  $slide = 'style="display:none;"'; } ;
-  
-  
- if(isset($_SESSION['user_data']))    
+if(isset($_SESSION['user_data']))    
         $profilemenu = 'style="display:none;"'; 
     else  
         $profilemenu =  'style="display:block;"';
