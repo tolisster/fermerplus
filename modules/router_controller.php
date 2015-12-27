@@ -79,5 +79,6 @@ class Router {
       
  if ( $GET['page']  == $engine)  {  $smenu.$i = ''; }    else  {  $smenu.$i = 'style="display:none;"';}         
    }
+   if ( $GET['page']  == 'main')  {  $slide = ''; }    else  {  $slide = 'style="display:none;"'; } ;
   }
 }
