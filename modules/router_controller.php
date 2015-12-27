@@ -5,7 +5,7 @@ class Router {
   
   public function readPages($isPage){
     
-  global $POST,$GET,$products,$main_diseases,$mnews,$slider;
+  global $POST,$GET,$products,$main_diseases,$mnews,$slider,$title;
      
     if($isPage != 'none'){
       
@@ -14,6 +14,7 @@ class Router {
       $POST = htmlChars($POST); 
       
       include './modules/'.$pageInArray .'_controller.php';
+      $title = '' . MAIN_TITLE. '' ;
       $this->fabrik_engine();    
       include './modules/engine.php';
       include './skins/tpl/'.$pageInArray .'/show.tpl';
