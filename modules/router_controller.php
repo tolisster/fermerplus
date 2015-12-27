@@ -30,7 +30,7 @@ class Router {
   
   public function fabrik_engine(){
     
-  global $GET,$lang,$lang2,$lang3,$lang1,$sel,$sel2,$sel3,$sel4,$smenu,$smenu1,$smenu2,$smenu3,$smenu4,$smenu5,$smenu6; 
+  global $GET,$lang,$lang2,$lang3,$lang1,$sel,$sel2,$sel3,$sel4,$smenu,$smenu1,$smenu2,$smenu3,$smenu4,$smenu5,$smenu6,$slide; 
     
   if ( $GET['page']  == 'main' and $GET['rem']  == 'read'  )  {  $css_patch = 'main.css'; }    else  {  $css_patch = 'style.css'; }
  
