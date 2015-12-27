@@ -176,8 +176,8 @@
     </script>
     <!-- Jssor Slider Begin -->
     <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
-    <div id="slider1_container" style="position: relative; top: -21px; left: -23px; width: 270px;
-        height: 297px;">
+    <div id="slider1_container" style="position: relative; top: 45px; left: -23px; width: 270px;
+        height: 270px;">
 
         <!-- Loading Screen -->
         <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -190,7 +190,7 @@
         </div>
 
         <!-- Slides Container -->
-        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 270px; height: 342px;
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 270px; height: 249px;
             overflow: hidden;">
         <?php echo $slider; ?>
         </div>
