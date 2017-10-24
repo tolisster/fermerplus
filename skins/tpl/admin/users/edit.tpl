@@ -61,7 +61,7 @@
 
 
 
-<div class="inp"><input type="submit" name="ok" value="Сахранить" /></div>
+<div class="inp"><input type="submit" name="ok" value="Сохранить" /></div>
 </form>
 
 
